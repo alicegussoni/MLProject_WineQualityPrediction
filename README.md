@@ -21,6 +21,7 @@ Project structure:
 ├── project_results_complete.json
 
 Methodology:
+
 Data Preprocessing:
 - Outlier removal using the Interquartile Range (IQR) method
 - Stratified 80/20 train-test split
@@ -28,12 +29,12 @@ Data Preprocessing:
 - Identical transformation applied to the test set to prevent data leakage
 
 Implemented Models:
-- Linear Models
-  Soft-margin Support Vector Machine (hinge loss)
+- Linear Models: 
+  Soft-margin Support Vector Machine (hinge loss) and 
   Logistic Regression (logistic loss)
 
-- Kernel Extensions
-  Polynomial kernel
+- Kernel Extensions:
+  Polynomial kernel and
   Gaussian (RBF) kernel
 
 Hyperparameters were selected using cross-validation on the training set.
