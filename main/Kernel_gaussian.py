@@ -289,7 +289,7 @@ y_score_Gaussian_SVM = kernel_predict_SVM(
 y_pred_Gaussian_SVM = np.sign(y_score_Gaussian_SVM)
 
 
-#####
+
 TP_Gaussian_SVM = np.sum((y_pred_Gaussian_SVM == 1) & (y_test_bin == 1))
 TN_Gaussian_SVM = np.sum((y_pred_Gaussian_SVM == -1) & (y_test_bin == -1))
 FP_Gaussian_SVM = np.sum((y_pred_Gaussian_SVM == 1) & (y_test_bin == -1))
