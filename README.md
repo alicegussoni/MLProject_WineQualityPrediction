@@ -6,7 +6,7 @@ The original quality score was transformed into a binary classification problem:
 
 - Good (1) → quality ≥ 6
 - Bad (0) → quality < 6
-- 
+  
 The objective is to compare linear and kernel-based classifiers and analyze their bias–variance behavior.
 
 Project structure:
