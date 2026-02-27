@@ -341,7 +341,7 @@ alpha_final_Gaussian_LR, history_loss_gaussian_LR, history_val_loss_gaussian_LR 
 y_prob_Gaussian_LR = kernel_predict_LR(X_test, X_train, alpha_final_Gaussian_LR, final_gau_kernel_lr)
 y_pred_Gaussian_LR = np.where(y_prob_Gaussian_LR >= 0.5, 1, -1)
 
-####
+
 TP_Gaussian_LR = np.sum((y_pred_Gaussian_LR ==  1) & (y_test_bin ==  1))
 TN_Gaussian_LR = np.sum((y_pred_Gaussian_LR == -1) & (y_test_bin == -1))
 FP_Gaussian_LR = np.sum((y_pred_Gaussian_LR ==  1) & (y_test_bin == -1))
